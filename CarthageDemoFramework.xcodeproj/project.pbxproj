@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B28B1D4F20B1B6B000D0307D /* CarthageDemoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28B1D4520B1B6B000D0307D /* CarthageDemoFramework.framework */; };
-		B28B1D5420B1B6B000D0307D /* CarthageDemoFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B1D5320B1B6B000D0307D /* CarthageDemoFrameworkTests.swift */; };
 		B28B1D5620B1B6B000D0307D /* CarthageDemoFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B28B1D4820B1B6B000D0307D /* CarthageDemoFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B28B1D6220B1B6D000D0307D /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B1D6120B1B6D000D0307D /* PersonTests.swift */; };
+		B28B1D6420B1B6DD00D0307D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B1D6320B1B6DC00D0307D /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +28,9 @@
 		B28B1D4820B1B6B000D0307D /* CarthageDemoFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarthageDemoFramework.h; sourceTree = "<group>"; };
 		B28B1D4920B1B6B000D0307D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B28B1D4E20B1B6B000D0307D /* CarthageDemoFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarthageDemoFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B28B1D5320B1B6B000D0307D /* CarthageDemoFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarthageDemoFrameworkTests.swift; sourceTree = "<group>"; };
 		B28B1D5520B1B6B000D0307D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B28B1D6120B1B6D000D0307D /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		B28B1D6320B1B6DC00D0307D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		B28B1D4720B1B6B000D0307D /* CarthageDemoFramework */ = {
 			isa = PBXGroup;
 			children = (
+				B28B1D6320B1B6DC00D0307D /* Person.swift */,
 				B28B1D4820B1B6B000D0307D /* CarthageDemoFramework.h */,
 				B28B1D4920B1B6B000D0307D /* Info.plist */,
 			);
@@ -80,7 +83,7 @@
 		B28B1D5220B1B6B000D0307D /* CarthageDemoFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				B28B1D5320B1B6B000D0307D /* CarthageDemoFrameworkTests.swift */,
+				B28B1D6120B1B6D000D0307D /* PersonTests.swift */,
 				B28B1D5520B1B6B000D0307D /* Info.plist */,
 			);
 			path = CarthageDemoFrameworkTests;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					B28B1D4420B1B6B000D0307D = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					B28B1D4D20B1B6B000D0307D = {
 						CreatedOnToolsVersion = 9.3;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B28B1D6420B1B6DD00D0307D /* Person.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B28B1D5420B1B6B000D0307D /* CarthageDemoFrameworkTests.swift in Sources */,
+				B28B1D6220B1B6D000D0307D /* PersonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		B28B1D5A20B1B6B000D0307D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.CarthageDemoFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		B28B1D5B20B1B6B000D0307D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		B28B1D5D20B1B6B000D0307D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XR88US5DG4;
 				INFOPLIST_FILE = CarthageDemoFrameworkTests/Info.plist;
@@ -407,6 +416,7 @@
 		B28B1D5E20B1B6B000D0307D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XR88US5DG4;
 				INFOPLIST_FILE = CarthageDemoFrameworkTests/Info.plist;
