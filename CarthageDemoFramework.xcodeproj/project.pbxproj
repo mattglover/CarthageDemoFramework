@@ -77,9 +77,9 @@
 		B28B1D4720B1B6B000D0307D /* CarthageDemoFramework */ = {
 			isa = PBXGroup;
 			children = (
+				B28B1D4820B1B6B000D0307D /* CarthageDemoFramework.h */,
 				B28B1D6320B1B6DC00D0307D /* Person.swift */,
 				B28B1DA120B1E8D400D0307D /* Drink.swift */,
-				B28B1D4820B1B6B000D0307D /* CarthageDemoFramework.h */,
 				B28B1D4920B1B6B000D0307D /* Info.plist */,
 			);
 			path = CarthageDemoFramework;
