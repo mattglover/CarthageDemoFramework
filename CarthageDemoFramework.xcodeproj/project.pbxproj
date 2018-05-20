@@ -11,6 +11,8 @@
 		B28B1D5620B1B6B000D0307D /* CarthageDemoFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B28B1D4820B1B6B000D0307D /* CarthageDemoFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B28B1D6220B1B6D000D0307D /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B1D6120B1B6D000D0307D /* PersonTests.swift */; };
 		B28B1D6420B1B6DD00D0307D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B1D6320B1B6DC00D0307D /* Person.swift */; };
+		B28B1DA220B1E8D400D0307D /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B1DA120B1E8D400D0307D /* Drink.swift */; };
+		B28B1DA420B1E99500D0307D /* DrinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B1DA320B1E99500D0307D /* DrinkTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		B28B1D5520B1B6B000D0307D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B28B1D6120B1B6D000D0307D /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		B28B1D6320B1B6DC00D0307D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B28B1DA120B1E8D400D0307D /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		B28B1DA320B1E99500D0307D /* DrinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				B28B1D6320B1B6DC00D0307D /* Person.swift */,
+				B28B1DA120B1E8D400D0307D /* Drink.swift */,
 				B28B1D4820B1B6B000D0307D /* CarthageDemoFramework.h */,
 				B28B1D4920B1B6B000D0307D /* Info.plist */,
 			);
@@ -84,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				B28B1D6120B1B6D000D0307D /* PersonTests.swift */,
+				B28B1DA320B1E99500D0307D /* DrinkTests.swift */,
 				B28B1D5520B1B6B000D0307D /* Info.plist */,
 			);
 			path = CarthageDemoFrameworkTests;
@@ -198,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B28B1DA220B1E8D400D0307D /* Drink.swift in Sources */,
 				B28B1D6420B1B6DD00D0307D /* Person.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B28B1DA420B1E99500D0307D /* DrinkTests.swift in Sources */,
 				B28B1D6220B1B6D000D0307D /* PersonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
