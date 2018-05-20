@@ -15,6 +15,12 @@ class PersonTests: XCTestCase {
 
 		sut.dateOfBirth = Date.yesterday()
 		XCTAssertEqual(1, sut.daysAlive())
+
+		sut.dateOfBirth = Date()
+		XCTAssertEqual(0, sut.daysAlive())
+
+		sut.dateOfBirth = Date.tomorrow()
+		XCTAssertNil(sut.daysAlive())
 	}
 }
 
@@ -22,5 +28,8 @@ class PersonTests: XCTestCase {
 extension Date {
 	fileprivate static func yesterday() -> Date {
 		return Date().addingTimeInterval(-86400)
+	}
+	fileprivate static func tomorrow() -> Date {
+		return Date().addingTimeInterval(86400)
 	}
 }

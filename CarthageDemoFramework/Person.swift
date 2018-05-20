@@ -13,7 +13,9 @@ public struct Person {
 	public func daysAlive() -> Int? {
 		guard let dateOfBirth = self.dateOfBirth else { return nil }
 		let daysAliveSeconds = Int(Date().timeIntervalSince(dateOfBirth))
-		
+
+		guard daysAliveSeconds >= 0 else { return nil }
+
 		return daysAliveSeconds / 86400
 	}
 }
